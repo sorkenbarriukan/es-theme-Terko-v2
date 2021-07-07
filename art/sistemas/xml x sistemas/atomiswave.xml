@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
 <!------------------------ SYSTEM-------------------------->
@@ -8,7 +8,7 @@
 <size>1 1</size>
 <pos>0 0</pos>
 <origin>0 0</origin>
-<color>5a161b</color>
+<color>175f21</color>
 <path>./art/sistemas/fondos x sistemas/basico.png</path>
 <zIndex>22</zIndex>
 </image>  
@@ -248,7 +248,7 @@
 <size>1 1</size>
 <pos>0 0</pos>
 <origin>0 0</origin>
-<color>5a161b</color>
+<color>175f21</color>
 <path>./art/sistemas/fondos x sistemas/basico.png</path>
 <zIndex>22</zIndex>
 </image>  
