@@ -53,7 +53,7 @@ Theme: es-theme-Terko-v2
 <include lang="en">./art/sistemas/variables/en.xml</include>
   
 
-<!------------------------RUTA AL XML-------------------------->
+<!------------------------RUTA  AL XML-------------------------->
 <include>./art/sistemas/xml x sistemas/${system.theme}.xml</include>
 
 
@@ -406,7 +406,6 @@ Theme: es-theme-Terko-v2
 <size>1 1</size>
 <pos>0 0</pos>
 <origin>0 0</origin>
-<color>5a161b</color>
 <path>./art/sistemas/fondos x sistemas/basico.png</path>
 <linearSmooth>true</linearSmooth>
 <zIndex>22</zIndex>
@@ -598,6 +597,7 @@ Theme: es-theme-Terko-v2
 </helpsystem>
     
 <text name="logoText">
+<fontSize>0.020</fontSize>
 <fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
 <color>${baseColor}</color>
 <forceUppercase>true</forceUppercase>
