@@ -1,0 +1,1053 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <!-----------------------------------------------------------------------------------------------------------------
+Total Size 1.39 GB
+Theme: es-theme-Terko-v2
+-------------------------------------------------------------------------------------------------------------------------->
+
+<theme defaultView="GAMECAROUSEL">
+<formatVersion>7</formatVersion>
+
+<variables>
+<mostra-personajesName>MOSTRAR PERSONAJE</mostra-personajesName>
+<size-personajesName>POSICION DEL PERSONAJE</size-personajesName>
+<mostrar-boxartName>MOSTRAR BOXART presente solo en system</mostrar-boxartName>
+<opciones-de-personajes-en-sistemaName>APLICAR EFECTO AL PERSONAJE</opciones-de-personajes-en-sistemaName>
+<cambiar-logos-en-carruselName>CAMBIAR LOGOS EN CARRUSEL</cambiar-logos-en-carruselName>
+<cambiar-logos-en-gamelistName>CAMBIAR LOGOS EN GAMELIST</cambiar-logos-en-gamelistName>
+<activar-movimiento-en-logo-de-carruselName>ACTIVAR ANIMACION EN LOGO ACTIVO DEL CARRUSEL</activar-movimiento-en-logo-de-carruselName>
+<subset.aplicar-sonido-en-carrusel>APLICAR SONIDO EN CARRUSEL</subset.aplicar-sonido-en-carrusel>
+<subset.aplicar-sonido-en-gamelist>APLICAR SONIDO EN GAMELIST</subset.aplicar-sonido-en-gamelist>
+<subset.opciones-de-video-sistema>EFECTO EN VIDEO</subset.opciones-de-video-sistema>
+<menuName>CAMBIAR ESTILO DEL MENU</menuName>
+<subset.shader>SHADERS - (POR ENCIMA DE TODO)</subset.shader>
+<subset.colorset>CAMBIAR COLOR DEL SISTEMA (Menus)</subset.colorset>
+</variables>
+
+
+<!-- LENGUAJES (VARIABLES) -->
+<include lang="es_MX">./art/sistemas/variables/es.xml</include>
+<include lang="es">./art/sistemas/variables/es.xml</include>
+<include lang="ca">./art/sistemas/variables/ca.xml</include>
+<include lang="cy">./art/sistemas/variables/cy.xml</include>
+<include lang="eu">./art/sistemas/variables/eu.xml</include>
+<include lang="nl">./art/sistemas/variables/nl.xml</include>
+<include lang="ar">./art/sistemas/variables/ar.xml</include>
+<include lang="pt_BR">./art/sistemas/variables/pt_BR.xml</include>
+<include lang="pt">./art/sistemas/variables/pt.xml</include>
+<include lang="it">./art/sistemas/variables/it.xml</include>
+<include lang="fr">./art/sistemas/variables/fr.xml</include>
+<include lang="ru">./art/sistemas/variables/ru.xml</include>
+<include lang="de">./art/sistemas/variables/de.xml</include>
+<include lang="gr">./art/sistemas/variables/gr.xml</include>
+<include lang="hu">./art/sistemas/variables/hu.xml</include>
+<include lang="el">./art/sistemas/variables/el.xml</include>
+<include lang="tr">./art/sistemas/variables/tr.xml</include>
+<include lang="ja">./art/sistemas/variables/ja.xml</include>
+<include lang="ko">./art/sistemas/variables/ko.xml</include>
+<include lang="oc">./art/sistemas/variables/oc.xml</include>
+<include lang="pl">./art/sistemas/variables/pl.xml</include>
+<include lang="zh">./art/sistemas/variables/zh.xml</include>
+<include lang="nn">./art/sistemas/variables/nn.xml</include>
+<include lang="sv">./art/sistemas/variables/sv.xml</include>
+<include lang="uk">./art/sistemas/variables/uk.xml</include>
+<include lang="en">./art/sistemas/variables/en.xml</include>
+  
+
+<!------------------------RUTA AL XML-------------------------->
+<include>./art/sistemas/xml x sistemas/${system.theme}.xml</include>
+
+
+
+<!------------------------ MENU-------------------------->
+  <subset name="menu" displayName="${menuName}">
+<include name="Rojo (POR DEFECTO)">./art/sistemas/menus/por defecto.xml</include>
+<include name="FONDO OBSCURO - FUENTE Pixel LCD">./art/sistemas/menus/menu5.xml</include>
+<include name="FONDO RUIDO - FUENTE Pixel LCD">./art/sistemas/menus/menu6.xml</include>
+</subset>
+  
+  
+<!-- --------------------------------------- ((( MENU -- OPCIONES DE PERSONAJES ))) -------------------------------- -->
+<subset name="mostrar-personajes" displayName="${mostra-personajesName}">
+
+<!--  MOSTRAR PERSONAJES-->
+<include name="NO (Por Defecto)" displayName="${yes}">./art/sistemas/storyboards/no Activate characters.xml</include>
+<include name="SI" displayName="${yes}">./art/sistemas/storyboards/characters.xml</include>
+</subset>
+
+
+<!--  TAMAÑO DE PERSONAJES-->
+<subset name="size-personajes" displayName="${size-personajesName}">
+<include name="AUTOMATIC">./art/sistemas/storyboards/system/character/size/automatic.xml</include>
+<include name="1x-Left">./art/sistemas/storyboards/system/character/size/L1x.xml</include>
+<include name="2x-Left">./art/sistemas/storyboards/system/character/size/L2x.xml</include>
+<include name="3x-Left">./art/sistemas/storyboards/system/character/size/L3x.xml</include>
+<include name="4x-Left">./art/sistemas/storyboards/system/character/size/L4x.xml</include>
+<include name="5x-Left">./art/sistemas/storyboards/system/character/size/L5x.xml</include>
+<include name="6x-Left">./art/sistemas/storyboards/system/character/size/L6x.xml</include>
+<include name="7x-Left">./art/sistemas/storyboards/system/character/size/L7x.xml</include>
+<include name="8x-Left">./art/sistemas/storyboards/system/character/size/L8x.xml</include>
+<include name="9x-Left">./art/sistemas/storyboards/system/character/size/L9x.xml</include>
+<include name="10x-Left">./art/sistemas/storyboards/system/character/size/L10x.xml</include>
+
+<include name="1x-Center">./art/sistemas/storyboards/system/character/size/C1x.xml</include>
+<include name="2x-Center">./art/sistemas/storyboards/system/character/size/C2x.xml</include>
+<include name="3x-Center">./art/sistemas/storyboards/system/character/size/C3x.xml</include>
+<include name="4x-Center">./art/sistemas/storyboards/system/character/size/C4x.xml</include>
+<include name="5x-Center">./art/sistemas/storyboards/system/character/size/C5x.xml</include>
+<include name="6x-Center">./art/sistemas/storyboards/system/character/size/C6x.xml</include>
+<include name="7x-Center">./art/sistemas/storyboards/system/character/size/C7x.xml</include>
+<include name="8x-Center">./art/sistemas/storyboards/system/character/size/C8x.xml</include>
+<include name="9x-Center">./art/sistemas/storyboards/system/character/size/C9x.xml</include>
+<include name="10x-Center">./art/sistemas/storyboards/system/character/size/C10x.xml</include>
+
+<include name="1x-RIGHT">./art/sistemas/storyboards/system/character/size/R1x.xml</include>
+<include name="2x-RIGHT">./art/sistemas/storyboards/system/character/size/R2x.xml</include>
+<include name="3x-RIGHT">./art/sistemas/storyboards/system/character/size/R3x.xml</include>
+<include name="4x-RIGHT">./art/sistemas/storyboards/system/character/size/R4x.xml</include>
+<include name="5x-RIGHT">./art/sistemas/storyboards/system/character/size/R5x.xml</include>
+<include name="6x-RIGHT">./art/sistemas/storyboards/system/character/size/R6x.xml</include>
+<include name="7x-RIGHT">./art/sistemas/storyboards/system/character/size/R7x.xml</include>
+<include name="8x-RIGHT">./art/sistemas/storyboards/system/character/size/R8x.xml</include>
+<include name="9x-RIGHT">./art/sistemas/storyboards/system/character/size/R9x.xml</include>
+<include name="10x-RIGHT">./art/sistemas/storyboards/system/character/size/R10x.xml</include>
+</subset>
+
+<!-- storyboards  System Character-->
+<subset name="opciones-de-personajes-en-sistema" displayName="${opciones-de-personajes-en-sistemaName}">
+<include name="•NINGUNO">./art/sistemas/storyboards/system/character/default.xml</include>
+<include name="•SALTO  (it only works in gamelist)">./art/sistemas/storyboards/system/character/salto.xml</include>
+<include name="•Giro">./art/sistemas/storyboards/system/character/giro.xml</include>
+<include name="•Acople">./art/sistemas/storyboards/system/character/acople.xml</include>
+<include name="•Sacudida">./art/sistemas/storyboards/system/character/sacudida.xml</include>
+<include name="•Efecto Hypermax Plus+">./art/sistemas/storyboards/system/character/Efecto Hypermax Plus+.xml</include>
+<include name="•Opacity">./art/sistemas/storyboards/system/character/opacity.xml</include>
+<include name="•Aparecer Desde Izquierda">./art/sistemas/storyboards/system/character/From Left.xml</include>
+<include name="•Aparecer Desde Abajo">./art/sistemas/storyboards/system/character/From below.xml</include>
+<include name="•Aparecer Desde Arriva">./art/sistemas/storyboards/system/character/From above.xml</include>
+<include name="•Aparecer Desde Derecha">./art/sistemas/storyboards/system/character/From right Slow.xml</include>
+<include name="•Aparecer Lento">./art/sistemas/storyboards/system/character/Appears slow.xml</include>
+<include name="•bump">./art/sistemas/storyboards/system/character/bump.xml</include>
+<include name="•Rebote">./art/sistemas/storyboards/system/character/rebote.xml</include>
+<include name="•Escala">./art/sistemas/storyboards/system/character/scale&rotation.xml</include>
+<include name="•Parpedeo">./art/sistemas/storyboards/system/character/parpedeo.xml</include>
+<include name="•Opacidad y Giro">./art/sistemas/storyboards/system/character/opacity&rotation.xml</include>
+<include name="•Acercamiento">./art/sistemas/storyboards/system/character/Vayven.xml</include>
+<include name="•Extender">./art/sistemas/storyboards/system/character/Vuelta.xml</include>
+<include name="•Extender Hacia Abajo">./art/sistemas/storyboards/system/character/Vuelta centro.xml</include>
+<include name="•Estirar Ala Izquierda">./art/sistemas/storyboards/system/character/Stretch right.xml</include>
+<include name="•Estirar Ala Izquierda & Arriva">./art/sistemas/storyboards/system/character/Stretch left&Up.xml</include>
+<include name="•Desliz">./art/sistemas/storyboards/system/character/desliz.xml</include>
+<include name="•Glitch (first i must apply show character) ">./art/sistemas/storyboards/system/character/glitch.xml</include>
+</subset>
+
+<!-- --------------------------------------- ((( SHOW BOXART ))) -------------------------------- -->
+<subset name="mostrar-boxart" displayName="${mostrar-boxartName}">
+<include name="NO" displayName="${yes}">./art/sistemas/storyboards/boxart no.xml</include>
+<include name="SI" displayName="${yes}">./art/sistemas/storyboards/boxart si.xml</include>
+</subset>
+
+
+<!-- --------------------------------------- ((( OPCIONES DE LOGOS ))) -------------------------------- -->
+<subset name="cambiar-logos-en-carrusel" displayName="${cambiar-logos-en-carruselName}">
+ <include name="˙Silverring" displayName="${no}">./art/sistemas/storyboards/logos/silverring.xml</include>  
+<include name="˙Simples" displayName="${no}">./art/sistemas/storyboards/logos/simples.xml</include>     
+</subset>
+
+<!--  tipo de marquesina -->
+<subset name="cambiar-logos-en-gamelist" displayName="${cambiar-logos-en-gamelistName}">
+<include name=" ˙Silverring">./art/sistemas/storyboards/menu/logo/silverring.xml</include>
+<include name=" ˙Logos">./art/sistemas/storyboards/menu/logo/logo.xml</include>
+<include name=" ˙Logos Simples">./art/sistemas/storyboards/menu/logo/simples.xml</include>
+</subset>
+
+
+<!-- MOVIMIENTO EN LOGO SELECCIONADO DEL CARRUSEL EN SISTEMA-->
+<subset name="activar-movimiento-en-logo-de-carrusel" displayName="${activar-movimiento-en-logo-de-carruselName}">
+<include name="˙NINGUNO" displayName="${si}">./art/sistemas/storyboards/logos/movimiento en carrusel NO.xml</include>
+<include name="˙Deslizamiento" displayName="${si}">./art/sistemas/storyboards/logos/360.xml</include>
+<include name="˙BUMP" displayName="${si}">./art/sistemas/storyboards/logos/movimiento en carrusel SI.xml</include>
+<include name="˙GLITCH" displayName="${si}">./art/sistemas/storyboards/logos/movimiento en carrusel GLITCH.xml</include>
+<include name="˙PARPADEO" displayName="${si}">./art/sistemas/storyboards/logos/movimiento en carrusel PARPADEO.xml</include>
+<include name="˙ESTIRAR" displayName="${si}">./art/sistemas/storyboards/logos/movimiento en carrusel ESTIRAR.xml</include>
+<include name="˙BLINK" displayName="${si}">./art/sistemas/storyboards/logos/movimiento en carrusel BLINK.xml</include>
+<include name="˙ESTIRAR DESDE CENTRO" displayName="${si}">./art/sistemas/storyboards/logos/movimiento en carrusel ESTIRAR DESDE CENTRO.xml</include>
+<include name="˙BUMP DESDE CENTRO" displayName="${si}">./art/sistemas/storyboards/logos/movimiento en carrusel BUMP DESDE CENTRO.xml</include>
+</subset>
+
+
+
+<!-- --------------------------------------- ((( OPCIONES DE SONIDO SISTEMA Y GAMELIST ))) -------------------------------- -->
+
+<!-- sonidos en sistema-->
+<subset name="aplicar-sonido-en-carrusel" displayName="${subset.aplicar-sonido-en-carrusel}">
+<include name="˙Ninguno ((POR DEFECTO))" displayName="${none}"/>
+<include name="˙dkJump">./art/sistemas/sounds navigation/dkjump.xml</include>
+<include name="˙smwactivated">./art/sistemas/sounds navigation/smw activated.xml</include>
+<include name="˙basic">./art/sistemas/sounds navigation/basic.xml</include>
+<include name="˙beep_4">./art/sistemas/sounds navigation/beep_4.xml</include>
+<include name="˙beep_5">./art/sistemas/sounds navigation/beep_5.xml</include>
+<include name="˙beep_9">./art/sistemas/sounds navigation/beep_9.xml</include>
+<include name="˙beep_11">./art/sistemas/sounds navigation/beep_11.xml</include>
+<include name="˙beep_12">./art/sistemas/sounds navigation/beep_12.xml</include>
+<include name="˙beep_13">./art/sistemas/sounds navigation/beep_13.xml</include>
+<include name="˙beep_19">./art/sistemas/sounds navigation/beep_19.xml</include>
+<include name="˙beep_20">./art/sistemas/sounds navigation/beep_20.xml</include>
+<include name="˙beep_21">./art/sistemas/sounds navigation/beep_21.xml</include>
+<include name="˙highlight">./art/sistemas/sounds navigation/highlight.xml</include>
+<include name="˙keyok2">./art/sistemas/sounds navigation/keyok2.xml</include>
+<include name="˙keyok3">./art/sistemas/sounds navigation/keyok3.xml</include>
+<include name="˙keyok5">./art/sistemas/sounds navigation/keyok5.xml</include>
+<include name="˙lm_coin">./art/sistemas/sounds navigation/lm_coin.xml</include>
+<include name="˙lm_ghost">./art/sistemas/sounds navigation/lm_ghost.xml</include>
+<include name="˙load">./art/sistemas/sounds navigation/load.xml</include>
+<include name="˙mb_jump">./art/sistemas/sounds navigation/mb_jump.xml</include>
+<include name="˙mb_sc">./art/sistemas/sounds navigation/mb_sc.xml</include>
+<include name="˙mb_touch">./art/sistemas/sounds navigation/mb_touch.xml</include>
+<include name="˙no_damage">./art/sistemas/sounds navigation/no_damage.xml</include>
+<include name="˙nsmb_pause">./art/sistemas/sounds navigation/nsmb_pause.xml</include>
+<include name="˙romulan_beep1">./art/sistemas/sounds navigation/romulan_beep1.xml</include>
+<include name="˙scroll">./art/sistemas/sounds navigation/scroll.xml</include>
+<include name="˙scroll2">./art/sistemas/sounds navigation/scroll2.xml</include>
+<include name="˙scroll3">./art/sistemas/sounds navigation/scroll3.xml</include>
+<include name="˙smb3_map_travel">./art/sistemas/sounds navigation/smb3_map_travel.xml</include>
+<include name="˙smw_1-up">./art/sistemas/sounds navigation/smw_1-up.xml</include>
+<include name="˙smw_coin">./art/sistemas/sounds navigation/smw_coin.xml</include>
+<include name="˙smw_fireball">./art/sistemas/sounds navigation/smw_fireball.xml</include>
+<include name="˙smw_kick">./art/sistemas/sounds navigation/smw_kick.xml</include>
+<include name="˙smw_stomp">./art/sistemas/sounds navigation/smw_stomp.xml</include>
+<include name="˙systemsound">./art/sistemas/sounds navigation/systemsound.xml</include>
+</subset>
+
+<!--  sonidos de navegacion para grid & gamelist -->
+<subset name="aplicar-sonido-en-gamelist" displayName="${subset.aplicar-sonido-en-gamelistl}">
+<include name="•Ninguno (POR DEFECTO)" displayName="${none}"/>
+<include name="•dkJump">./art/sistemas/sounds navigation/sndgrid/dkjump.xml</include>
+<include name="•smwactivated">./art/sistemas/sounds navigation/sndgrid/smw activated.xml</include>
+<include name="•basic">./art/sistemas/sounds navigation/sndgrid/basic.xml</include>
+<include name="•beep_4">./art/sistemas/sounds navigation/sndgrid/beep_4.xml</include>
+<include name="•beep_5">./art/sistemas/sounds navigation/sndgrid/beep_5.xml</include>
+<include name="•beep_9">./art/sistemas/sounds navigation/sndgrid/beep_9.xml</include>
+<include name="•beep_11">./art/sistemas/sounds navigation/sndgrid/beep_11.xml</include>
+<include name="•beep_12">./art/sistemas/sounds navigation/sndgrid/beep_12.xml</include>
+<include name="•beep_13">./art/sistemas/sounds navigation/sndgrid/beep_13.xml</include>
+<include name="•beep_19">./art/sistemas/sounds navigation/sndgrid/beep_19.xml</include>
+<include name="•beep_20">./art/sistemas/sounds navigation/sndgrid/beep_20.xml</include>
+<include name="•beep_21">./art/sistemas/sounds navigation/sndgrid/beep_21.xml</include>
+<include name="•highlight">./art/sistemas/sounds navigation/sndgrid/highlight.xml</include>
+<include name="•keyok2">./art/sistemas/sounds navigation/sndgrid/keyok2.xml</include>
+<include name="•keyok3">./art/sistemas/sounds navigation/sndgrid/keyok3.xml</include>
+<include name="•keyok5">./art/sistemas/sounds navigation/sndgrid/keyok5.xml</include>
+<include name="•lm_coin">./art/sistemas/sounds navigation/sndgrid/lm_coin.xml</include>
+<include name="•lm_ghost">./art/sistemas/sounds navigation/sndgrid/lm_ghost.xml</include>
+<include name="•load">./art/sistemas/sounds navigation/sndgrid/load.xml</include>
+<include name="•mb_jump">./art/sistemas/sounds navigation/sndgrid/mb_jump.xml</include>
+<include name="•mb_sc">./art/sistemas/sounds navigation/sndgrid/mb_sc.xml</include>
+<include name="•mb_touch">./art/sistemas/sounds navigation/sndgrid/mb_touch.xml</include>
+<include name="•no_damage">./art/sistemas/sounds navigation/sndgrid/no_damage.xml</include>
+<include name="•nsmb_pause">./art/sistemas/sounds navigation/sndgrid/nsmb_pause.xml</include>
+<include name="•romulan_beep1">./art/sistemas/sounds navigation/sndgrid/romulan_beep1.xml</include>
+<include name="•scroll">./art/sistemas/sounds navigation/sndgrid/scroll.xml</include>
+<include name="•scroll2">./art/sistemas/sounds navigation/sndgrid/scroll2.xml</include>
+<include name="•scroll3">./art/sistemas/sounds navigation/sndgrid/scroll3.xml</include>
+<include name="•smb3_map_travel">./art/sistemas/sounds navigation/sndgrid/smb3_map_travel.xml</include>
+<include name="•smw_1-up">./art/sistemas/sounds navigation/sndgrid/smw_1-up.xml</include>
+<include name="•smw_coin">./art/sistemas/sounds navigation/sndgrid/smw_coin.xml</include>
+<include name="•smw_fireball">./art/sistemas/sounds navigation/sndgrid/smw_fireball.xml</include>
+<include name="•smw_kick">./art/sistemas/sounds navigation/sndgrid/smw_kick.xml</include>
+<include name="•smw_stomp">./art/sistemas/sounds navigation/sndgrid/smw_stomp.xml</include>
+<include name="•systemsound">./art/sistemas/sounds navigation/sndgrid/systemsound.xml</include>
+</subset>
+
+
+<!-- --------------------------------------- ((( OPCIONES DE VIDEO ))) -------------------------------- -->
+<!--storyboards  System Video  -->
+<subset name="opciones-de-video-sistema" displayName="${subset.opciones-de-video-sistema}">
+<include name="˙Ninguno (POR DEFECTO)" displayName="${none}"/>
+<include name="˙EaseOutCubic">./art/sistemas/storyboards/system/video/easeOutCubic.xml</include>
+<include name="˙Aparecer Desde La Izquierda">./art/sistemas/storyboards/system/video/From Left.xml</include>
+<include name="˙Aparecer Lento">./art/sistemas/storyboards/system/video/Appears slow.xml</include>
+<include name="˙Aparecer Desde Abajo">./art/sistemas/storyboards/system/video/From below.xml</include>
+<include name="˙Opacidad">./art/sistemas/storyboards/system/video/Opacity.xml</include>
+<include name="˙Aparecer Desde Arriva">./art/sistemas/storyboards/system/video/From above.xml</include>
+<include name="˙Bump">./art/sistemas/storyboards/system/video/bump.xml</include>
+<include name="˙Aparecer Desde La Derecha Lento">./art/sistemas/storyboards/system/video/From right Slow.xml</include>
+<include name="˙Sacudida">./art/sistemas/storyboards/system/video/sacudida.xml</include>
+</subset>
+
+
+<!--  color en efectos y texto -->
+<subset name="Colorset" displayName="${subset.colorset}">
+<include name="Rojo" displayName="${red}">./art/sistemas/colors/red.xml</include>
+<include name="Naranja" displayName="${Orange}">./art/sistemas/colors/orange.xml</include>
+<include name="Amarillo" displayName="${yellow}">./art/sistemas/colors/yellow.xml</include>
+<include name="Negro" displayName="${Black}">./art/sistemas/colors/Black.xml</include>
+<include name="Gris" displayName="${Grey}">./art/sistemas/colors/grey.xml</include>
+</subset>
+
+
+<!--  Efectos en pantalla encima de todo -->
+<subset name="Shader" displayName="${subset.shader}">
+<include name="Ninguno" displayName="${none}"/>
+<include name="Crt">./art/sistemas/shader/crt.xml</include>
+<include name="Filtro 2">./art/sistemas/shader/fitro 2.xml</include>
+<include name="Papel Para Comic View">./art/sistemas/shader/efecto papel arrugado.xml</include>
+<include name="ScanLines">./art/sistemas/shader/scanlines.xml</include>
+<include name="ScanLines-2">./art/sistemas/shader/scanlines3.xml</include>
+<include name="ScanLines-3">./art/sistemas/shader/scanlines4.xml</include>
+<include name="ScanLines-4">./art/sistemas/shader/scanlines5.xml</include>
+<include name="ScanLines-5">./art/sistemas/shader/scanlines7.xml</include>
+<include name="ScanLines-6">./art/sistemas/shader/scanlines10.xml</include>
+<include name="ScanLines vertical">./art/sistemas/shader/scanlines vertical.xml</include>
+<include name="Efecto Cristal">./art/sistemas/shader/glass effect.xml</include>
+<include name="Filtro Azul">./art/sistemas/shader/filtro hue blue.xml</include>
+</subset>
+
+
+<!--system -->
+<view name="system">
+<image name="background" extra="true">
+<tile>true</tile>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<path>./art/system.png</path>
+</image>
+    
+<text name="logoText">
+<fontPath>./art/sistemas/fuentes/.ttf</fontPath>
+<color>${baseColor}</color>
+<fontSize>0.060</fontSize>
+<forceUppercase>true</forceUppercase>
+</text>
+<image name="logo">
+<path>./${system.theme}/art/system-${lang}.png</path>
+<path>./${system.theme}/art/system-${lang}.svg</path>
+</image>
+</view>
+  
+  
+<!--------------------------- Pantalla por encima de todo------------------------------------- -->
+<view name="screen">
+<text name="clock">
+<textColor>777777FF</textColor>
+<fontSize>0.035</fontSize>
+<pos>0.90 0.94</pos>
+<size>0.09 0.058</size>
+<fontSize>0.020</fontSize>
+<alignment>right</alignment>
+<verticalAlignment>center</verticalAlignment>
+</text>
+<controllerActivity name="controllerActivity">
+<pos>0.01 0.01</pos>
+<size>0.085 0.025</size>
+<itemSpacing>0.003</itemSpacing>
+<imagePath>./art/gamepad.svg</imagePath>
+<color>FFFFFF80</color>
+<activityColor>A0A0FFC0</activityColor>
+<hotkeyColor>FFA0A0C0</hotkeyColor>
+</controllerActivity>
+
+<text name="marca de agua" extra="true">
+<pos>0.0 0.974</pos>
+<size>0.285 0.025</size>
+<text>ES-THEME-TERKO 2</text>
+<fontSize>0.015</fontSize>
+<fontPath>./art/sistemas/fuentes/Anticlimax.ttf</fontPath>
+<color>ffffff50</color>
+<forceUppercase>true</forceUppercase>
+</text>
+</view>
+  
+  
+<!---------------------------  VISTAS EN LISTA DE JUEGOS----------------------- -->
+
+
+<include name="DETALLADO">./art/sistemas/vista-lista-juegos/detalle.xml</include>
+<include name="GRID">./art/sistemas/vista-lista-juegos/grid.xml</include>
+<include name="CAROUSEL">./art/sistemas/vista-lista-juegos/carrusel.xml</include>
+<include name="CAROUSEL BACKGROUND RED">./art/sistemas/vista-lista-juegos/carruselrojo.xml</include>
+
+
+<!---------------------------  system----------------------- -->
+<view name="system">
+<carousel name="systemcarousel">
+<defaultTransition>instant</defaultTransition>
+<linearSmooth>true</linearSmooth>
+<zIndex>43</zIndex>	      
+<type>vertical_wheel</type>
+<pos>0.360 0</pos>
+<size>1 1</size>
+<logoScale>1.05</logoScale>
+<logoSize>0.130 0.260</logoSize>
+<color>00000000</color>
+<maxLogoCount>30</maxLogoCount>
+<logoRotation>8</logoRotation>
+<logoRotationOrigin>3.50 0.5</logoRotationOrigin>
+<logoAlignment>center</logoAlignment>       
+</carousel>
+
+<text name="systemInfo">
+<glowColor>ffffff</glowColor>
+<pos>-0.285 0.768</pos>
+<backgroundColor>00000000</backgroundColor>
+<color>5a161b</color>
+<rotation>0</rotation> 
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+ <linearSmooth>true</linearSmooth>
+<fontSize>0.025</fontSize>
+<zIndex>999</zIndex>
+<storyboard repeat="forever">
+<animation property="opacity" from="0" to="1" begin="0" duration="1350" mode="linear"/>
+</storyboard>
+</text> 
+
+<image name="background" extra="true">
+<tile>false</tile>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<color>5a161b</color>
+<path>./art/sistemas/fondos x sistemas/basico.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>22</zIndex>
+</image>  
+
+<image name="background2" extra="true">
+</image>  
+
+<image name="background3" extra="true">
+<tile>false</tile>
+<pos>0.235 0.525</pos>
+<origin>0.5 0.5</origin>
+<size>0.3920 0.420</size>
+<path>./art/sistemas/wall/default.png</path>
+<path>./art/sistemas/wall/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>24</zIndex>
+</image>
+  
+<image name="pointer" extra="true">
+<tile>false</tile>
+<pos>0.666 0.499</pos>
+<origin>0.5 0.5</origin>
+<size>0.078 0.223</size>
+<path>./art/sistemas/pointer/default.png</path>
+<path>./art/sistemas/pointer/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>22</zIndex>
+<storyboard repeat="forever">
+<animation property="opacity" from="0" to="10" duration="2950" mode="easeIn"/> 
+<animation property="opacity" from="0" to="10" duration="2950" begin="8000" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="350" mode="linear"/>
+</storyboard>
+</image>
+
+<image name="pointerl" extra="true">
+<visible>false</visible>
+</image>
+
+<video name="backgroundvideo" extra="true">
+<visible>true</visible>
+<path>{random}</path>  
+<path>./art/sistemas/videos/${system.theme}.mp4</path>
+<rotation>0</rotation>  
+<roundCorners>0</roundCorners>             
+<pos>0.237 0.525</pos>
+<origin>0.5 0.5</origin>
+<size>0.3960 0.420</size>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>25</zIndex>
+</video>
+
+
+<video name="backgroundvideosplash" extra="true">
+<visible>true</visible> 
+<path>./art/sistemas/videos/splash.mp4</path>
+<audio>${v0.audio}</audio>
+<rotation>0</rotation>  
+<roundCorners>0.22</roundCorners>               
+<pos>0.164 0.179</pos>
+<origin>0.5 0.5</origin>
+<size>0.205 0.149</size>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>25</zIndex>
+</video>
+
+<video name="backgroundvideoretrobat" extra="true">
+<visible>true</visible> 
+<path>./art/sistemas/videos/retrobat480p.mp4</path>
+<audio>${v0.audio}</audio>
+<rotation>0</rotation>  
+<roundCorners>0.22</roundCorners>               
+<pos>0.417 0.179</pos>
+<origin>0.5 0.5</origin>
+<size>0.205 0.149</size>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>25</zIndex>
+</video>
+
+<image name="consola" extra="true">
+<path>./art/sistemas/consoles/default.png</path>
+<path>./art/sistemas/consoles/${system.theme}.png</path>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<pos>0.035 0.865</pos>
+<maxSize>0.06 0.06</maxSize>
+<reflexion>0.0 0.0</reflexion>
+<storyboard repeat="forever">
+<animation property="rotation" from="-13" to="13" duration="100" autoreverse="true" begin="4000" repeat="3"/>
+</storyboard>  
+<zIndex>26</zIndex>
+</image>
+
+<image name="personaje" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<glowColor>000000</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>92</zIndex>
+</image>
+
+<image name="personaje2" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>ffffff</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>90</zIndex>
+</image>
+
+<image name="personaje3" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FE2EF7</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>91</zIndex>
+</image>
+
+<image name="box1" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.401 0.60</pos>
+<maxSize>0.07 0.30</maxSize>
+<zIndex>40</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+</image>
+
+<image name="box2" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.351 0.60</pos>
+<maxSize>0.04 0.20</maxSize>
+<zIndex>40</zIndex>
+<path>{random:thumbnail}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+</image>
+
+<image name="box3" extra="true">
+<origin>0.5 0.5</origin>
+<pos>0.153 0.892</pos>
+<maxSize>0.07 0.05</maxSize>
+<zIndex>25</zIndex>
+<path>{random:marquee}</path>
+<color>FFFFFFFF</color>
+<roundCorners>0.05</roundCorners>
+<visible>true</visible>
+<reflexion>0</reflexion>
+<opacity>0</opacity>
+<scale>0</scale>
+<scaleOrigin>0 0.5</scaleOrigin>
+<storyboard repeat="forever">
+<animation property="opacity" from="0" to="1" begin="350" duration="700" mode="linear"/>
+<animation property="scale" from="0" to="1" begin="350" duration="800"/>
+<animation property="scaleOrigin" to="0" begin="6000" duration="0"/>
+</storyboard>
+</image>
+
+<helpsystem name="help">
+<visible>true</visible>
+<textColor>531519</textColor>
+<iconColor>531519</iconColor>
+<fontSize>0.020</fontSize>
+<pos>0.130 0.02</pos>
+<zIndex>91</zIndex>
+</helpsystem>
+    
+<text name="logoText">
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<color>${baseColor}</color>
+<forceUppercase>true</forceUppercase>
+</text>
+<image name="logo">
+<path>./art/sistemas/ticket/${system.theme}.png</path>
+<path>./${system.theme}/art/system-${lang}.png</path>
+<path>./${system.theme}/art/system-${lang}.svg</path>
+</image>
+</view>
+
+
+<!---------------------------  GAMECAROUSEL----------------------- -->
+<view name="gamecarousel">
+<gamecarousel name="gamecarousel">
+<linearSmooth>true</linearSmooth>
+<zIndex>93</zIndex>	      
+<type>vertical_wheel</type>
+<pos>0.365 0</pos>
+<size>1 1</size>
+<logoScale>1.45</logoScale>
+<logoSize>0.130 0.260</logoSize>
+<color>ffffff</color>
+<maxLogoCount>30</maxLogoCount>
+<logoRotation>9</logoRotation>
+<logoRotationOrigin>3.7 0.5</logoRotationOrigin>
+<logoAlignment>center</logoAlignment>   
+<imageSource>marquee</imageSource>
+</gamecarousel> 
+
+<text name="gamecarouselLogoText">
+<fontSize>0.030</fontSize>
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<color>FFFFFFFF</color>
+<glowColor>000000FF</glowColor>
+<glowSize>4</glowSize>
+<lineSpacing>1.0</lineSpacing>
+</text>
+
+<image name="background" extra="true">
+</image>  
+
+<image name="background2" extra="true">
+</image>  
+
+<image name="background3" extra="true">
+<visible>false</visible>
+</image>
+  
+<image name="pointer" extra="true">
+<visible>true</visible>
+<tile>false</tile>
+<pos>0.666 0.499</pos>
+<origin>0.5 0.5</origin>
+<size>0.078 0.223</size>
+<path>./art/sistemas/pointer/default.png</path>
+<path>./art/sistemas/pointer/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>25</zIndex>
+<storyboard repeat="forever">
+<animation property="opacity" from="0" to="10" duration="2950" mode="easeIn"/> 
+<animation property="opacity" from="0" to="10" duration="2950" begin="8000" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="350" mode="linear"/>
+</storyboard>
+</image>
+
+<image name="pointerl" extra="true">
+<visible>false</visible>
+</image>
+
+<helpsystem name="help">
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<fontSize>0.025</fontSize>
+<origin>0.5 0.5</origin>
+<pos>0.5 0.98</pos>  
+<textColor>00000000</textColor>
+<iconColor>00000000</iconColor>
+</helpsystem>
+     
+<image name="consola" extra="true">
+<path>./art/sistemas/consoles/default.png</path>
+<path>./art/sistemas/consoles/${system.theme}.png</path>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<pos>0.035 0.865</pos>
+<maxSize>0.06 0.06</maxSize>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="y" from="1.01" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="y" from="1.01" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="y" from="1.01" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>  
+<zIndex>25</zIndex>
+</image>
+
+<image name="personaje" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<glowColor>000000</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>92</zIndex>
+</image>
+
+<image name="personaje2" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>90</zIndex>
+</image>
+
+<image name="personaje3" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>91</zIndex>
+</image>
+
+<video name="backgroundvideosplash" extra="true">
+<visible>true</visible> 
+<path>./art/sistemas/videos/splash.mp4</path>
+<audio>${v0.audio}</audio>
+<rotation>0</rotation>  
+<roundCorners>0.22</roundCorners>               
+<pos>0.164 0.179</pos>
+<origin>0.5 0.5</origin>
+<size>0.205 0.149</size>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>25</zIndex>
+<storyboard repeat="forever">
+<animation property="opacity" from="0" to="3" begin="7550" duration="42950" mode="easeIn"/> 
+</storyboard>
+</video>
+
+<video name="backgroundvideoretrobat" extra="true">
+<visible>true</visible> 
+<path>./art/sistemas/videos/retrobat480p.mp4</path>
+<audio>${v0.audio}</audio>
+<rotation>0</rotation>  
+<roundCorners>0.22</roundCorners>               
+<pos>0.417 0.179</pos>
+<origin>0.5 0.5</origin>
+<size>0.205 0.149</size>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>25</zIndex>
+</video>
+	
+<video name="md_video">
+<visible>true</visible>
+<color>ffffff</color>
+<roundCorners>0</roundCorners>             
+<pos>0.237 0.525</pos>
+<origin>0.5 0.5</origin>
+<size>0.3960 0.420</size>  
+<delay>0</delay>
+<effect>none</effect>    		 
+<showSnapshotNoVideo>true</showSnapshotNoVideo>
+<showSnapshotDelay>true</showSnapshotDelay>
+<zIndex>25</zIndex>
+</video> 
+
+<image name="md_image">
+<visible>true</visible>
+<roundCorners>0</roundCorners>             
+<pos>0.237 0.525</pos>
+<origin>0.5 0.5</origin>
+<size>0.3960 0.420</size>  
+<zIndex>24</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+	
+<text name="md_name">
+<visible>false</visible>	
+</text>
+
+<image name="md_thumbnail">
+<origin>0.5 0.5</origin>
+<pos>0.153 0.892</pos>
+<maxSize>0.07 0.10</maxSize>
+<reflexion>0.0 0.0</reflexion>
+<linearSmooth>true</linearSmooth>
+<zIndex>25</zIndex>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="y" from="1.01" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="y" from="1.01" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="y" from="1.01" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+</image>
+	
+<text name="logoText">
+<pos>0.164 0.180</pos>
+<origin>0.5 0.5</origin>
+<size>0.160 0.110</size>
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<size>0.57 0.1</size>
+<alignment>center</alignment>
+<color>00000000</color>
+<forceUppercase>1</forceUppercase>
+<linearSmooth>true</linearSmooth>
+</text>
+
+<image name="md_marquee">
+<pos>0.164 0.180</pos>
+<origin>0.5 0.5</origin>
+<size>0.160 0.110</size>
+<linearSmooth>true</linearSmooth>
+<zIndex>96</zIndex> 
+</image>
+
+<image name="logo">
+<pos>0.164 0.180</pos>
+<origin>0.5 0.5</origin>
+<size>0.215 0.160</size>
+<linearSmooth>true</linearSmooth>
+<zIndex>22</zIndex> 
+</image>
+
+<image name="md_flag"> 
+<visible>true</visible>
+<origin>0.5 0.5</origin>
+<pos>0.590 0.497</pos>
+<maxSize>0.025 0.018</maxSize>
+<zIndex>200</zIndex>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>  
+</image>
+
+<text name="md_developer,md_lbl_playcount,md_playcount,md_lastplayed,md_rating,md_manual,md_nomanual,md_cheevos,md_notcheevos,md_players,md_savestate,md_nosavestate">
+ <visible>false</visible>
+<color>00000000</color>
+</text>
+</view>
+
+
+<!---------------------------  BASIC----------------------- -->
+<view name="basic">
+<image name="background" extra="true">
+<tile>false</tile>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<size>1 1</size>
+<path>./art/sistemas/fondos/basicrojo.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>20</zIndex>
+</image>
+
+<image name="background2" extra="true">
+<tile>false</tile>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<size>1 1</size>
+<path>./art/sistemas/fondos/basic.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>30</zIndex>
+</image>
+
+<textlist name="gamelist">
+<selectorColor>00000000</selectorColor>
+<selectedColor>ffffff</selectedColor>
+<primaryColor>747777</primaryColor>
+<secondaryColor>7a6161</secondaryColor>
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<selectorImagePath>./art/sistemas/fondos/selector.png</selectorImagePath>
+<fontSize>0.030</fontSize>
+<pos>0.270 0.23</pos>
+<size>0.450 0.73</size>
+<alignment>center</alignment>
+<lineSpacing>2.5</lineSpacing>
+<horizontalMargin>0.05</horizontalMargin>
+<forceUppercase>false</forceUppercase>
+<zIndex>90</zIndex>
+</textlist>
+
+ <image name="pointer" extra="true">
+<tile>false</tile>
+<pos>0.819 0.506</pos>
+<origin>0.5 0.5</origin>
+<size>0.077 0.233</size>
+<path>./art/sistemas/pointer/default.png</path>
+<path>./art/sistemas/pointer/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>22</zIndex>
+<storyboard repeat="forever">
+<animation property="opacity" from="0" to="10" duration="2950" mode="easeIn"/> 
+<animation property="opacity" from="0" to="10" duration="2950" begin="8000" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="350" mode="linear"/>
+</storyboard>
+</image>
+
+<image name="pointeri" extra="true">
+<visible>false</visible>
+</image>
+
+<image name="personaje" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<glowColor>000000</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>92</zIndex>
+</image>
+
+<image name="personaje2" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>2EFE2E</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>90</zIndex>
+</image>
+
+<image name="personaje3" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FE2EF7</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>91</zIndex>
+</image>
+
+<helpsystem name="help">
+<textColor>00000000</textColor>
+<iconColor>00000000</iconColor>
+<fontSize>0.020</fontSize>
+<pos>0.29 0.97</pos>
+</helpsystem>
+
+<image name="md_marquee">
+<pos>0.490 0.12</pos>
+<size>0.150 0.099</size>
+<zIndex>90</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+
+<video name="backgroundvideosplash" extra="true">
+<visible>true</visible> 
+<path>./art/sistemas/videos/splash.mp4</path>
+<audio>${v0.audio}</audio>
+<rotation>0</rotation>  
+<roundCorners>0.22</roundCorners>               
+<pos>0.496 0.140</pos>
+<origin>0.5 0.5</origin>
+<size>0.160 0.129</size>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>21</zIndex>
+</video>
+
+<text name="logoText">
+<pos>0.492 0.142</pos>
+<size>0.150 0.099</size>
+<origin>0.5 0.5</origin>
+<alignment>center</alignment>
+<fontSize>0.07</fontSize>
+<fontPath>./art/sistemas/fuentes/Bebas Neue.ttf</fontPath>
+<color>00000000</color>
+<zIndex>23</zIndex>
+</text>
+<image name="logo">
+<pos>0.496 0.142</pos>
+<size>0.152 0.120</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>23</zIndex>
+</image>
+
+<rating name="md_rating">
+<pos>0.88 0.886</pos>
+<size>0.05 0.03</size>
+<color>FFFFFF</color>
+<unfilledColor>808080</unfilledColor>
+</rating>
+</view>
+</theme>
+
+
