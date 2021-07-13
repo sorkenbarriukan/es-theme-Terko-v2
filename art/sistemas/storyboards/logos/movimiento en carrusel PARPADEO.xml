@@ -11,6 +11,7 @@
 </storyboard>
 <linearSmooth>true</linearSmooth>
 <storyboard event="activate" repeat="0">
+<animation property="scale" from="0" to="1.4"/>
 <animation property="opacity" from="0" to="10" begin="2000" duration="2950" mode="easeIn"/> 
 </storyboard>
 </image>
@@ -19,7 +20,15 @@
 <fontPath>./art/sistemas/fuentes/bestfriends.ttf</fontPath>
 <color>${baseColor}</color>
 <forceUppercase>true</forceUppercase>
+<storyboard event="activate">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+</storyboard>
+<storyboard event="deactivate">
+<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+</storyboard>
+<linearSmooth>true</linearSmooth>
 <storyboard event="activate" repeat="0">
+<animation property="scale" from="0" to="1.4"/>
 <animation property="opacity" from="0" to="10" begin="2000" duration="2950" mode="easeIn"/> 
 </storyboard>
 </text>
